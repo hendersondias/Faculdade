@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/distanciaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distância percorrida (KM)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/precoLitroInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/distanciaInput"
+        android:hint="Preço por litro (R$)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/autonomiaInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/precoLitroInput"
+        android:hint="Autonomia do veículo (KM/L)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calcularButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autonomiaInput"
+        android:text="CALCULAR" />
+
+    <TextView
+        android:id="@+id/resultadoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calcularButton"
+        android:text="GASTO TOTAL SERÁ DE: R$ 0,00"
+        android:textSize="18sp" />
+
+</RelativeLayout>

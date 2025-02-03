@@ -1,0 +1,8 @@
+Nome: Henderson Dias RA 0973231
+Nome: Maysa Lima RA 0907231
+
+Atividade 2: 
+
+é um diagrama  uma livraria online tendo um passo a passo sobre como é o processo da criação e venda dos produtos, começando pelo autor  que tem todos os dados e em seguida sua criação da escrita e o livro,  como é sua estrutura, titulo, o ano de publicação, etc, e em seguida é publicada pela editora, o cliente pode escolher  a quantidade e coloca-lo no carrinho sendo uma ou mais quantidades.
+
+as conexões do diagrama é relacionadas entre si por meio de linhas que indicam o tipo e a cardinalidade da relação. O tipo da relação é o nome que descreve a origem da conexão, como escrito por, publicado por, carrinho de, etc. Já a cardinalidade da relação é o número de ocorrências de uma entidade que podem se relacionar com outra entidade, como um para um, um para muitos, muitos para muitos, etc.
