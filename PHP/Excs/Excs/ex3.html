@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recibo de Empréstimo de Livro</title>
+</head>
+
+<body>
+    <form action="ex3.php" method="POST">
+        <label for="nomeLivro">Nome do Livro:</label>
+        <input type="text" id="nomeLivro" name="nomeLivro" required><br><br>
+
+        <label for="tipoUsuario">Tipo de Usuário:</label>
+        <select id="tipoUsuario" name="tipoUsuario">
+            <option value="professor">Professor</option>
+            <option value="aluno">Aluno</option>
+        </select><br><br>
+
+        <input type="submit" name="submit" value="Gerar Recibo">
+    </form>
+
+
+</body>
+
+</html>

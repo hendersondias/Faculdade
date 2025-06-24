@@ -1,0 +1,69 @@
+1 Criar um banco chamado Brasil e um Collection chamado cidades
+
+2 Importar o JSON
+
+3 Faça uma busca por todos os municípios com mais de 100.000 habitantes
+
+4 Faça uma busca por todos os municípios do Nordeste com menos de 100.000 habitantes
+
+5 Faça uma busca por todos os municípios do Norte e Centro-Oeste com mais de 10.000 e menos de 50.000 habitantes.
+
+6 Faça uma busca pelas 20 cidades mais populosas de cada região
+
+7 Faça uma busca que retorne todas as cidades com mais de 150.000 habitantes e exiba a soma dos habitantes e a média de habitantes dessas cidades.
+
+8 Faça uma busca que traga apenas as cidades com população acima de 1 milhão de habitantes, faça a somatória e a média das cidades.
+
+9 Repita o comando 3 ordenando alfabeticamente de maneira crescente o nome das cidades
+
+10 Repita o comando 6 ordenando de maneira decrescente pelo número de habitantes
+
+11 Repita o comando 8, ordenando de maneira decrescente pelo número de habitantes
+
+12 Repita o comando 7 ordenando de maneira crescente pelo nome de cada município
+
+========================================================================
+
+Respostas Atividades:
+
+3
+
+db.cidades.find({ "POPULAÇÃO ESTIMADA": { $gt: 100000 } })
+
+4
+
+db.cidades.aggregate([{ $match: { "COD UF": { $gte: 11, $lte: 17 }, "POPULAÇÃO ESTIMADA": { $lt: 100000 } } }])
+
+5
+
+db.cidades.aggregate([{ $match: { $or: [{ "COD UF": { $gte: 11, $lte: 17 } }, { "COD UF": { $gte: 50, $lte: 53 } }], "POPULAÇÃO ESTIMADA": { $gt: 10000, $lt: 50000 } } }])
+
+6
+
+db.cidades.find({ "COD UF": { $gte: 11, $lte: 17 } }).sort({ "POPULAÇÃO ESTIMADA": -1 }).limit(20)
+
+Alterar os COD pra cada região 
+
+7
+
+db.cidades.aggregate([{ $match: { "POPULAÇÃO ESTIMADA": { $gte: 150000 } } }, { $group: { _id: null, total_habitantes: { $sum: "$POPULAÇÃO ESTIMADA" }, media_habitantes: { $avg: "$POPULAÇÃO ESTIMADA" } } }])
+
+8
+
+db.cidades.aggregate([{ $match: { "POPULAÇÃO ESTIMADA": { $gt: 1000000 } } }, { $group: { _id: null, total_habitantes: { $sum: "$POPULAÇÃO ESTIMADA" }, media_habitantes: { $avg: "$POPULAÇÃO ESTIMADA" } } }])
+
+9
+
+db.cidades.find({ "POPULAÇÃO ESTIMADA": { $gt: 100000 } }).sort({ "NOME DO MUNICÍPIO": 1 })
+
+10
+
+db.cidades.find({ "COD UF": { $gte: 11, $lte: 17 } }).sort({ "POPULAÇÃO ESTIMADA": -1, "NOME DO MUNICÍPIO": 1 }).limit(20)
+
+11
+
+db.cidades.aggregate([{ $match: { "POPULAÇÃO ESTIMADA": { $gt: 1000000 } } },{ $group: { _id: null, total_habitantes: { $sum: "$POPULAÇÃO ESTIMADA" }, media_habitantes: { $avg: "$POPULAÇÃO ESTIMADA" } } },{ $sort: { total_habitantes: -1 } }])
+
+12
+
+db.cidades.aggregate([{ $match: { "POPULAÇÃO ESTIMADA": { $gte: 150000 } } },{ $group: { _id: null, total_habitantes: { $sum: "$POPULAÇÃO ESTIMADA" }, media_habitantes: { $avg: "$POPULAÇÃO ESTIMADA" } } },{ $sort: { "_id": 1 } } ])

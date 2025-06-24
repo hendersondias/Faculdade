@@ -1,0 +1,1 @@
+utilizar o xampp para rodar o banco de dados

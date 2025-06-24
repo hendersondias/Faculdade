@@ -1,0 +1,290 @@
+
+db.meuTime.insertMany([
+    {
+        _id: 1,
+        "Nome do Time": "Flamengo",
+        "Jogadores": {
+            "17": "Agustín Rossi",
+            "4": "Léo Pereira",
+            "15": "Fabrício Bruno",
+            "6": "Ayrton Lucas",
+            "34": "Mateuzinho",
+            "14": "Giorgian de Arrascaeta",
+            "20": "Gerson",
+            "5": "Erick Pulgar",
+            "9": "Pedro",
+            "11": "Everton",
+            "31": "Luiz Araújo"
+        },
+        "Técnico": "Vitor Pereira",
+        "Reservas": {
+            "30": "Pablo",
+            "48": "Igor",
+            "1": "Santos",
+            "33": "Cleiton",
+            "63": "Rayan",
+            "2": "Gullermo Varela",
+            "25": "Matheus Cunha"
+        },
+        "Estadio": "Maracanã",
+        "Cidade": "Rio de Janeiro"
+    }
+])
+
+
+
+db.meuTime.insertOne({_id: 2,
+    "numeroDaRodada": "1",
+    "adversario": "São Paulo",
+    "mandante": true,
+    "resultado": "D",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-12-06T21:30:00")
+}
+)
+    
+
+db.meuTime.insertOne({_id: 3,
+    "numeroDaRodada": "2",
+    "adversario": "Cuiabá",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "3",
+    "pontosAcumulados": "3",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-12-03T16:30:00")
+})
+
+db.meuTime.insertOne({
+        _id: 4,
+    "numeroDaRodada": "3",
+    "adversario": "Atlético-MG",
+    "mandante": true,
+    "resultado": "D",
+    "pontosNaRodada": "3",
+    "pontosAcumulados": "3",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-11-29T19:30:00")
+})
+
+db.meuTime.insertOne({
+        _id: 5,
+    "numeroDaRodada": 4,
+    "adversario": "América-MG",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "3",
+    "pontosAcumulados": "3",
+    "estadio": "Parque do Sabiá",
+    "localPartida": "Uberlandia",
+    "horarioPartida": ISODate("2023-11-26T18:30:00")
+})
+db.meuTime.insertOne({
+        _id: 6,
+    "numeroDaRodada": "5",
+    "adversario": "Red Bull Bragantino",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-11-23T21:30:00")
+})
+db.meuTime.insertOne({
+        _id: 7,
+    "numeroDaRodada": "6",
+    "adversario": "Fluminense",
+    "mandante": true,
+    "resultado": "E",
+    "pontosNaRodada": "0",
+    "pontosAcumulados": "0",
+    "estadio": "Maracana",
+    "localPartida": "Maracanã",
+    "horarioPartida": ISODate("2023-11-06T18:30:00")
+})
+db.meuTime.insertOne({
+        _id: 8,
+    "numeroDaRodada": "7",
+    "adversario": "Fortaleza",
+    "mandante": false,
+    "resultado": "V",
+    "pontosNaRodada": "2",
+    "pontosAcumulados": "2",
+    "estadio": "Castelão",
+    "localPartida": "Fortaleza",
+    "horarioPartida": ISODate("2023-11-05T16:00:00")
+})
+db.meuTime.insertOne({
+        _id: 9,
+    "numeroDaRodada": "8",
+    "adversario": "Santos",
+    "mandante": false,
+    "resultado": "D",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "BRB Mané Garrincha",
+    "localPartida": "Porto Alegre",
+    "horarioPartida": ISODate("2023-11-01T20:00:00")
+})
+
+
+db.meuTime.insertOne({
+        _id: 10,
+    "numeroDaRodada": "9",
+    "adversario": "Gremio",
+    "mandante": false,
+    "resultado": "D",
+    "pontosNaRodada": "2",
+    "pontosAcumulados": "2",
+    "estadio": "Gremio arena",
+    "localPartida": "Porto Alegre",
+    "horarioPartida": ISODate("2023-10-25T21:30:00")
+})
+db.meuTime.insertOne({
+        _id: 11,
+    "numeroDaRodada": "10",
+    "adversario": "Vasco da Gama",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-10-22T16:00:00")
+})
+db.meuTime.insertOne({
+        _id: 12,
+    "numeroDaRodada": "11",
+    "adversario": "Cruzeiro",
+    "mandante": false,
+    "resultado": "V",
+    "pontosNaRodada": "2",
+    "pontosAcumulados": "2",
+    "estadio": "Mineirao",
+    "localPartida": "Belo Horizonte",
+    "horarioPartida": ISODate("2023-10-19T19:00:00")
+})
+db.meuTime.insertOne({
+        _id: 13,
+    "numeroDaRodada": "12",
+    "adversario": "Corinthians",
+    "mandante": false,
+    "resultado": "E",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "Neo quimica arena",
+    "localPartida": "Sao Paulo",
+    "horarioPartida": ISODate("2023-10-07T21:00:00")
+})
+db.meuTime.insertOne({
+        _id: 14,
+    "numeroDaRodada": "13",
+    "adversario": "Bahia",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "1",
+    "pontosAcumulados": "1",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-09-30T16:00:00")
+})
+db.meuTime.insertOne({_id: 15,
+    "numeroDaRodada": "14",
+    "adversario": "Goias",
+    "mandante": false,
+    "resultado": "E",
+    "pontosNaRodada": "0",
+    "pontosAcumulados": "0",
+    "estadio": "Haile Pinheiro",
+    "localPartida": "Goiania",
+    "horarioPartida": ISODate("2023-09-20T19:00:00")
+})
+db.meuTime.insertOne({_id: 16,
+    "numeroDaRodada": "15",
+    "adversario": "Athletico PR",
+    "mandante": true,
+    "resultado": "D",
+    "pontosNaRodada": "0",
+    "pontosAcumulados": "0",
+    "estadio": "Kleber Andrade",
+    "localPartida": "Espirito Santo",
+    "horarioPartida": ISODate("2023-09-13T21:30:00")
+})
+db.meuTime.insertOne({_id: 17,
+    "numeroDaRodada": "16",
+    "adversario": "Botafogo",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "2",
+    "pontosAcumulados": "2",
+    "estadio": "Nilton Santos",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-09-02T21:00:00")
+})
+db.meuTime.insertOne({_id: 18,
+    "numeroDaRodada": "17",
+    "adversario": "Botafogo",
+    "mandante": true,
+    "resultado": "V",
+    "pontosNaRodada": "2",
+    "pontosAcumulados": "2",
+    "estadio": "Nilton Santos",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-09-02T21:00:00")
+})
+db.meuTime.insertOne({_id: 19,
+    "numeroDaRodada": "18",
+    "adversario": "Internacional",
+    "mandante": true,
+    "resultado": "E",
+    "pontosNaRodada": "0",
+    "pontosAcumulados": "0",
+    "estadio": "Maracana",
+    "localPartida": "Rio de Janeiro",
+    "horarioPartida": ISODate("2023-08-26T18:30:00")
+})
+db.meuTime.insertOne({_id: 20,
+    "numeroDaRodada": "19",
+    "adversario": "Coritiba",
+    "mandante": false,
+    "resultado": "V",
+    "pontosNaRodada": "3",
+    "pontosAcumulados": "3",
+    "estadio": "Couto Pereira",
+    "localPartida": "Curitiba",
+    "horarioPartida": ISODate("2023-08-20T16:00:00")
+})
+
+db.meuTime.insertOne({_id:2,"numeroDaRodada":1,"adversario":"São Paulo","mandante":true,"resultado":"D","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-12-06T21:30:00")})
+db.meuTime.insertOne({_id:3,"numeroDaRodada":2,"adversario":"Cuiabá","mandante":true,"resultado":"V","pontosNaRodada":3,"pontosAcumulados":3,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-12-03T16:30:00")})
+db.meuTime.insertOne({_id:4,"numeroDaRodada":3,"adversario":"Atlético-MG","mandante":true,"resultado":"D","pontosNaRodada":3,"pontosAcumulados":3,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-11-29T19:30:00")})
+db.meuTime.insertOne({_id:5,"numeroDaRodada":4,"adversario":"América-MG","mandante":true,"resultado":"V","pontosNaRodada":3,"pontosAcumulados":3,"estadio":"Parque do Sabiá","localPartida":"Uberlandia","horarioPartida":ISODate("2023-11-26T18:30:00")})
+db.meuTime.insertOne({_id:6,"numeroDaRodada":5,"adversario":"Red Bull Bragantino","mandante":true,"resultado":"V","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-11-23T21:30:00")})
+db.meuTime.insertOne({_id:7,"numeroDaRodada":6,"adversario":"Fluminense","mandante":true,"resultado":"E","pontosNaRodada":0,"pontosAcumulados":0,"estadio":"Maracana","localPartida":"Maracanã","horarioPartida":ISODate("2023-11-06T18:30:00")})
+db.meuTime.insertOne({_id:8,"numeroDaRodada":7,"adversario":"Fortaleza","mandante":false,"resultado":"V","pontosNaRodada":2,"pontosAcumulados":2,"estadio":"Castelão","localPartida":"Fortaleza","horarioPartida":ISODate("2023-11-05T16:00:00")})
+db.meuTime.insertOne({_id:9,"numeroDaRodada":8,"adversario":"Santos","mandante":false,"resultado":"D","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"BRB Mané Garrincha","localPartida":"Porto Alegre","horarioPartida":ISODate("2023-11-01T20:00:00")})
+db.meuTime.insertOne({_id:10,"numeroDaRodada":9,"adversario":"Gremio","mandante":false,"resultado":"D","pontosNaRodada":2,"pontosAcumulados":2,"estadio":"Gremio arena","localPartida":"Porto Alegre","horarioPartida":ISODate("2023-10-25T21:30:00")})
+db.meuTime.insertOne({_id:11,"numeroDaRodada":10,"adversario":"Vasco da Gama","mandante":true,"resultado":"V","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-10-22T16:00:00")})
+db.meuTime.insertOne({_id:12,"numeroDaRodada":11,"adversario":"Cruzeiro","mandante":false,"resultado":"V","pontosNaRodada":2,"pontosAcumulados":2,"estadio":"Mineirao","localPartida":"Belo Horizonte","horarioPartida":ISODate("2023-10-19T19:00:00")})
+db.meuTime.insertOne({_id:13,"numeroDaRodada":12,"adversario":"Corinthians","mandante":false,"resultado":"E","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"Neo quimica arena","localPartida":"Sao Paulo","horarioPartida":ISODate("2023-10-07T21:00:00")})
+db.meuTime.insertOne({_id:14,"numeroDaRodada":13,"adversario":"Bahia","mandante":true,"resultado":"V","pontosNaRodada":1,"pontosAcumulados":1,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-09-30T16:00:00")})
+db.meuTime.insertOne({_id:15,"numeroDaRodada":14,"adversario":"Goias","mandante":false,"resultado":"E","pontosNaRodada":0,"pontosAcumulados":0,"estadio":"Haile Pinheiro","localPartida":"Goiania","horarioPartida":ISODate("2023-09-20T19:00:00")})
+db.meuTime.insertOne({_id:16,"numeroDaRodada":15,"adversario":"Athletico PR","mandante":true,"resultado":"D","pontosNaRodada":0,"pontosAcumulados":0,"estadio":"Kleber Andrade","localPartida":"Espirito Santo","horarioPartida":ISODate("2023-09-13T21:30:00")})
+db.meuTime.insertOne({_id:17,"numeroDaRodada":16,"adversario":"Botafogo","mandante":true,"resultado":"V","pontosNaRodada":2,"pontosAcumulados":2,"estadio":"Nilton Santos","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-09-02T21:00:00")})
+db.meuTime.insertOne({_id:18,"numeroDaRodada":17,"adversario":"Botafogo","mandante":true,"resultado":"V","pontosNaRodada":2,"pontosAcumulados":2,"estadio":"Nilton Santos","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-09-02T21:00:00")})
+db.meuTime.insertOne({_id:19,"numeroDaRodada":18,"adversario":"Internacional","mandante":true,"resultado":"E","pontosNaRodada":0,"pontosAcumulados":0,"estadio":"Maracana","localPartida":"Rio de Janeiro","horarioPartida":ISODate("2023-08-26T18:30:00")})
+db.meuTime.insertOne({_id:20,"numeroDaRodada":19,"adversario":"Coritiba","mandante":false,"resultado":"V","pontosNaRodada":3,"pontosAcumulados":3,"estadio":"Couto Pereira","localPartida":"Curitiba","horarioPartida":ISODate("2023-08-20T16:00:00")})
+
+
+
+
+
+
+
+

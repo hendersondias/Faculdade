@@ -1,0 +1,9 @@
+CREATE DATABASE crud;
+
+USE crud;
+
+CREATE TABLE pessoas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    idade INT NOT NULL
+);

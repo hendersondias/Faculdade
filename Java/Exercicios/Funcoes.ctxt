@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Funcoes
+comment0.text=importa\ a\ biblioteca\ de\ erro\ de\ valores
+comment1.params=texto\ erro
+comment1.target=int\ digitaInt(java.lang.String,\ java.lang.String)
+comment1.text=\ Metodo\ estatico\ para\ digicao\ de\ valor\ inteiro\ ele\ recebe\ dois\ textos\:\r\n\ 1\ -\ a\ string\ que\ sera\ exibida\ pedindo\ para\ o\ usuario\ digitar\ algo\r\n\ 2\ -\ A\ mensagem\ de\ erro\ que\ ser\u00E1\ exibida\ caso\ seja\ digitado\ um\ valor\ invalido\r\n
+comment2.params=texto\ erro
+comment2.target=float\ digitaFloat(java.lang.String,\ java.lang.String)
+comment2.text=Metodo\ estatico\ para\ digicao\ de\ valor\ float\ ele\ recebe\ dois\ textos\r\n\ 1\ -\ a\ string\ que\ sera\ exibida\ pedindo\ para\ o\ usuario\ digitar\ algo\r\n\ 2\ -\ A\ mensagem\ de\ erro\ que\ ser\u00E1\ exibida\ caso\ seja\ digitado\ um\ valor\ invalido\r\n\ Obs.\:\ n\u00E3o\ comentei\ as\ linhas\ pois\ \u00E9\ identico\ ao\ metodo\ digitaInt\ trocando\ apenas\ o\ campo\ int\ por\ float\r\n
+comment3.params=number
+comment3.target=boolean\ is_even(int)
+numComments=4

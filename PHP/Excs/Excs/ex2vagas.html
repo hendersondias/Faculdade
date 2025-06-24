@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Direcionamento de Vagas</title>
+</head>
+
+<body>
+    <form action="ex2vagas.php" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="area">Área de Interesse:</label>
+        <select id="area" name="area">
+            <option value="analise">Análise</option>
+            <option value="infraestrutura">Infra-estrutura</option>
+            <option value="desenvolvimento">Desenvolvimento</option>
+        </select><br><br>
+
+        <input type="submit" name="submit" value="Enviar">
+    </form>
+
+   
+</body>
+
+</html>

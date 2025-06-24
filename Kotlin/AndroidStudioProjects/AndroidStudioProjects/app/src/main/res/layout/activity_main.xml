@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:src="@drawable/display_settings_pc"
+        android:tint="@color/cyan"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/edit_hdms"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Distância em km"/>
+    <TextView
+        android:id="@+id/text_km"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Quilômetros"/>
+
+    <Button
+        android:id="@+id/button_0973231"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Calcular"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:text="Distância em milhas"/>
+
+    <TextView
+        android:id="@+id/gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:text="0,00"/>
+
+
+</LinearLayout>

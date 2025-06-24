@@ -1,0 +1,157 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+html{
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+#hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.pinimg.com/564x/cc/d1/07/ccd107d2f23d619f2f63a4091c87769f.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: brightness(50%);
+}
+
+#hero_content{
+    position: absolute;
+
+}
+ 
+#hero_content h1{
+    color: #fff;
+    font-size: 2.8rem;
+    text-shadow: 2px 2px 2px #000;
+}
+
+#hero_content h2{
+    color: #fff;
+    font-size: 2rem;
+    font-family: cursive;
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+}
+
+#hero_content a{
+    color: #fff;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid #e04aca;
+    background: rgb(0,0,0,0.6);
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+#hero_content a:hover{
+    background: #f560f7;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(0,0,0,0.5);
+}
+
+#navbar h1{
+    color: #fff;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+}
+
+#navbar ul{
+    display: flex;
+
+}
+#navbar img{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px 10px 15px;
+}
+
+#navbar ul li{
+    list-style: none;
+    padding: 3px 15px 3px 15px;
+    color: #fff;
+    border-radius: 30px;
+}
+
+#navbar ul li:hover, #mobile_menu ul li:hover{
+    background: rgb(0,0,0,0.5);
+    cursor: pointer;
+
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+#mobile_menu{
+    display: none;
+    height: 4px;
+
+}
+
+#mobile_menu ul{
+    display: flex;
+    justify-content: center;
+}
+
+#mobile_menu ul li{
+    list-style: none;
+    padding: 0 5px 0 5px ;
+}
+#mobile_menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+@media screen and (max-width : 768px){
+    #mobile_menu{
+        display: block;
+    }
+    #navbar ul{
+        display: none;
+    }
+    html{
+        font-size: 95%;
+    }
+}

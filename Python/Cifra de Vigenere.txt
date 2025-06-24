@@ -1,0 +1,18 @@
+Nome: Henderson Dias Matias da Silva RA: 0973/23-1
+
+Cifra de Vigenère: 
+A cifra de Vigenère é uma cifra polialfabética que usa uma chave para cifrar o texto. Para quebrá-la, o processo envolve dois passos principais:
+
+1. Descobrir o comprimento da chave:
+-Método de Kasiski: Procura-se por sequências repetidas no texto cifrado. As distâncias entre essas repetições ajudam a estimar o comprimento da chave.
+
+-Índice de Coincidência: Calcula-se a frequência das letras e compara-se com a distribuição normal da língua para identificar o comprimento da chave.
+
+2. Encontrar a chave:
+Depois de determinar o comprimento da chave, divide-se o texto em grupos com base na posição das letras da chave. Cada grupo é analisado como uma cifra de César, e com análise de frequência, encontra-se a letra correspondente da chave para cada grupo.
+
+3. Decifrar a mensagem:
+Com a chave completa, aplica-se a inversa da cifra de Vigenère para decifrar o texto.
+
+Esses passos podem ser feitos manualmente ou com ferramentas automáticas, como scripts em python.
+

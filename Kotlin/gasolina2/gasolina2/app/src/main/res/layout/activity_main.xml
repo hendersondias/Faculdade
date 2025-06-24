@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_gasolina"
+        android:src="@drawable/gasolina"
+        android:tint="@color/laranja"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="16dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/edit_distancia"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Distancia percorrida"
+        android:layout_below="@id/image_gasolina"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/text_km_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Total de quilometros"
+        android:layout_below="@id/edit_distancia"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_preco"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Preço"
+        android:layout_below="@id/text_km_total"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/text_preco_litro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Preço por litro"
+        android:layout_below="@id/edit_preco"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_autonomia"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Autonomia"
+        android:layout_below="@id/text_preco_litro"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/text_km_litro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Quilometros por litro"
+        android:layout_below="@id/edit_autonomia"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/text_gasto_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="20sp"
+        android:textAllCaps="true"
+        android:padding="12dp"
+        android:layout_marginTop="36dp"
+        android:textStyle="bold"
+        android:text="Gasto total será de: "
+        android:layout_below="@id/text_km_litro" />
+
+    <TextView
+        android:id="@+id/gasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:text="R$ 0,00"
+        android:layout_below="@id/text_gasto_total"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/button_calcula"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:text="Calcular"
+        android:textSize="20sp"
+        android:layout_below="@id/gasto"
+        android:layout_marginTop="12dp" />
+</RelativeLayout>
